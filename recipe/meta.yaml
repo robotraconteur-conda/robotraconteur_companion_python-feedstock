@@ -1,6 +1,6 @@
 package:
   name: robotraconteur_companion_python
-  version: 0.1.9
+  version: 0.1.9.1
 
 source:
   git_url: https://github.com/robotraconteur/robotraconteur_companion_python.git
