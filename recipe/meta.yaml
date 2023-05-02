@@ -1,11 +1,10 @@
 package:
   name: robotraconteur_companion_python
-  version: 0.1.9.1
+  version: 0.1.11
 
 source:
   git_url: https://github.com/robotraconteur/robotraconteur_companion_python.git
-  git_depth: 10
-  git_rev: v0.1.9
+  git_rev: v0.1.11
 
 requirements:
   host:
@@ -15,18 +14,25 @@ requirements:
     - setuptools
     - importlib_resources
     - pip
+    - general_robotics_toolbox>=0.7.1
   run:
     - python
     - robotraconteur
     - pyyaml
     - setuptools
     - importlib_resources
+    - general_robotics_toolbox>=0.7.1
 
 build:
   noarch: python
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
-  
+
+test:
+  imports:
+    - pytest
+  commands:
+    - pytest test -s
 
 about:
   home: http://robotraconteur.com
