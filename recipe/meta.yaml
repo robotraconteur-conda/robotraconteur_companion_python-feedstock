@@ -36,7 +36,7 @@ test:
   imports:
     - pytest
   commands:
-    - pytest test/ --verbose --ignore test/util/test_local_identifier_manager.py test/util/test_infofileloader.py
+    - pytest test/ --verbose --ignore test/util/test_local_identifier_manager.py --ignore test/util/test_infofileloader.py
 
 about:
   home: http://robotraconteur.com
