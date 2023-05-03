@@ -1,11 +1,11 @@
-About robotraconteur_companion_python
-=====================================
+About robotraconteur_companion_python-feedstock
+===============================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/robotraconteur/robotraconteur_companion_python-feedstock/blob/main/LICENSE.txt)
 
 Home: http://robotraconteur.com
 
-Package license: Apache 2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/robotraconteur/robotraconteur_companion_python-feedstock/blob/master/LICENSE.txt)
+Package license: Apache-2.0
 
 Summary: Companion library for the Robot Raconteur core library
 
@@ -38,16 +38,41 @@ conda config --add channels r
 conda config --set channel_priority strict
 ```
 
-Once the `r` channel has been enabled, `robotraconteur_companion_python` can be installed with:
+Once the `r` channel has been enabled, `robotraconteur_companion_python` can be installed with `conda`:
 
 ```
 conda install robotraconteur_companion_python
 ```
 
-It is possible to list all of the versions of `robotraconteur_companion_python` available on your platform with:
+or with `mamba`:
+
+```
+mamba install robotraconteur_companion_python
+```
+
+It is possible to list all of the versions of `robotraconteur_companion_python` available on your platform with `conda`:
 
 ```
 conda search robotraconteur_companion_python --channel r
+```
+
+or with `mamba`:
+
+```
+mamba search robotraconteur_companion_python --channel r
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search robotraconteur_companion_python --channel r
+
+# List packages depending on `robotraconteur_companion_python`:
+mamba repoquery whoneeds robotraconteur_companion_python --channel r
+
+# List dependencies of `robotraconteur_companion_python`:
+mamba repoquery depends robotraconteur_companion_python --channel r
 ```
 
 

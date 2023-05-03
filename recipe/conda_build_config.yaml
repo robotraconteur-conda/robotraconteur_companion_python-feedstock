@@ -1,4 +1,4 @@
 channel_sources:
-  - robotraconteur,conda-forge,defaults
+  - robotraconteur,pyri-project,conda-forge,defaults
 channel_targets:
   - robotraconteur main
